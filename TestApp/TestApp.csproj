@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <StartupObject>TestApp.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OOP_HW.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="OOP_HW">
+      <HintPath>..\OOP_HW\bin\Debug\OOP_HW.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

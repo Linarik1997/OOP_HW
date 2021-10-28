@@ -1,6 +1,7 @@
 ﻿using System;
-using OOP_HW.Strings;
-namespace OOP_HW
+using OOP_HW.Buildings;
+
+namespace TestApp
 {
     class Program
     {
@@ -21,11 +22,15 @@ namespace OOP_HW
 
             StringHelper stringHelper = new StringHelper();
             Console.WriteLine(stringHelper.Reverse("hello boyS"));
-            */
+            
             StringHelper stringHelper = new StringHelper();
             Info info = new Info("Николай Николаевич", "nn@yandex.ru");
             info.AddToSource();
             stringHelper.SearchMail(ref stringHelper.s);
+            Console.ReadLine();
+            */
+            var building = Creator.Create();
+            Creator.Destroy(building);
             Console.ReadLine();
         }
     }
