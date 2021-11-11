@@ -1,4 +1,5 @@
 ﻿using System;
+using OOP_HW.RationalNumbers;
 using OOP_HW.Buildings;
 
 namespace TestApp
@@ -7,30 +8,10 @@ namespace TestApp
     {
         static void Main(string[] args)
         {
-            /*
-            Account account = new Account(Definition.Current);
-            account.GetInfo();
-            Account account1 = new Account(5000);
-            account1.GetInfo();
-            Account account2 = new Account(Definition.Budget,10000);
-            account2.GetInfo();
-            account2.Deposit(2000);
-            account2.Withdrawl(3000);
-            account.Withdrawl(1000);
-            account.GetInfo();
-            account2.Transfer(100000, account);
-
-            StringHelper stringHelper = new StringHelper();
-            Console.WriteLine(stringHelper.Reverse("hello boyS"));
-            
-            StringHelper stringHelper = new StringHelper();
-            Info info = new Info("Николай Николаевич", "nn@yandex.ru");
-            info.AddToSource();
-            stringHelper.SearchMail(ref stringHelper.s);
-            Console.ReadLine();
-            */
-            var building = Creator.Create();
-            Creator.Destroy(building);
+            RationalNumber x = new RationalNumber(1,5);
+            RationalNumber y = new RationalNumber(2,5);
+            Console.WriteLine((float)y);
+            Console.WriteLine(x!=y);
             Console.ReadLine();
         }
     }
