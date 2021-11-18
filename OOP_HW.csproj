@@ -68,6 +68,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RationalNumbers\MathHelper.cs" />
     <Compile Include="RationalNumbers\RationalNumber.cs" />
+    <Compile Include="RPG\Ablts\Fireball.cs" />
+    <Compile Include="RPG\Fabrique\Creator.cs" />
+    <Compile Include="RPG\Ablts\Ability.cs" />
+    <Compile Include="RPG\Fabrique\MageCreator.cs" />
+    <Compile Include="RPG\Fabrique\RogueCreator.cs" />
+    <Compile Include="RPG\Heroes\Hero.cs" />
+    <Compile Include="RPG\Heroes\Mage.cs" />
+    <Compile Include="RPG\Fabrique\WarriorCreator.cs" />
+    <Compile Include="RPG\Heroes\Rogue.cs" />
+    <Compile Include="RPG\Heroes\Warrior.cs" />
+    <Compile Include="RPG\Inventory.cs" />
+    <Compile Include="RPG\Item.cs" />
+    <Compile Include="RPG\Stats.cs" />
     <Compile Include="Strings\StringHelper.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -89,5 +102,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
