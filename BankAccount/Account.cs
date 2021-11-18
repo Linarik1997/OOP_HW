@@ -78,10 +78,42 @@ namespace OOP_HW
         /// <summary>
         /// Information about Account Fields
         /// </summary>
-        public void GetInfo()
+        public override string ToString()
         {
-            Console.WriteLine($"Id:{Id}\n\rType:{Define}\n\rBalance:{Balance}\n\r");
+            return $"Id:{Id}\n\rType:{Define}\n\rBalance:{Balance}\n\r";
         }
+        public override bool Equals(object obj)
+        {
+            return Equals(obj as Account);
+        }
+        public bool Equals(Account obj)
+        {
+            bool areEqual = false;
+            if (obj.Id == this.Id && obj.Define == this.Define)
+            {
+                areEqual = true;
+            }
+            return areEqual;
+        }
+        public override int GetHashCode()
+        {
+            return (int)this.Id * base.GetHashCode();
+        }
+        public static bool operator ==(
+            Account acc1,
+            Account acc2)
+        {
+            return acc1.Equals(acc2);
+        }
+        public static bool operator !=(
+    Account acc1,
+    Account acc2)
+        {
+             return acc1.Equals(acc2);
+        }
+
+
+
         /// <summary>
         /// Deposit of funds to account
         /// </summary>
